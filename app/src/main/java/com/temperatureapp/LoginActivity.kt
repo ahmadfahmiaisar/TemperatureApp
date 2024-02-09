@@ -42,7 +42,9 @@ class LoginActivity : AppCompatActivity() {
             Toast.makeText(this, "username atau password tidak ditemukan", Toast.LENGTH_SHORT)
                 .show()
         } else {
-            startActivity(Intent(this, MainActivity::class.java))
+            val intent = Intent(this, MainActivity::class.java)
+                .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK)
+            startActivityWithAnimation(intent)
         }
     }
 
