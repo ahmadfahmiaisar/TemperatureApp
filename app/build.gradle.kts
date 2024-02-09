@@ -49,4 +49,5 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 
     implementation("com.intuit.sdp:sdp-android:1.1.0")
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.7.0")
 }
