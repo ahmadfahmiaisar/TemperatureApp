@@ -68,10 +68,12 @@ class HistoryFragment : Fragment() {
             histories?.removeAt(indexItemDeleted)
             reference.setValue(histories)
                 .addOnSuccessListener {
-                    Toast.makeText(requireActivity(), "berhasil di hapus", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(requireActivity(), "berhasil di hapus", Toast.LENGTH_SHORT)
+                        .show()
                 }
                 .addOnFailureListener {
-                    Toast.makeText(requireActivity(), "tidak berhasil dihapus", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(requireActivity(), "tidak berhasil dihapus", Toast.LENGTH_SHORT)
+                        .show()
                 }
         }
     }

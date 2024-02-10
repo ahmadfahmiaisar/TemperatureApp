@@ -9,10 +9,6 @@ import com.smadu1.temperatureapp.R
 
 class InformationFragment : Fragment() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -23,13 +19,5 @@ class InformationFragment : Fragment() {
 
     companion object {
         fun newInstance() = InformationFragment()
-        /*@JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            InformationFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }*/
     }
 }

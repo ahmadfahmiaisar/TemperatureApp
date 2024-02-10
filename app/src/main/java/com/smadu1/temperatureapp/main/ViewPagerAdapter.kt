@@ -15,8 +15,8 @@ class ViewPagerAdapter(fragmentManager: FragmentManager, lifecycle: Lifecycle) :
     override fun createFragment(position: Int): Fragment {
         return when (position) {
             0 -> TaskFragment.newInstance()
-            1 -> InformationFragment.newInstance()
-            2 -> HistoryFragment.newInstance()
+//            1 -> InformationFragment.newInstance()
+            1 -> HistoryFragment.newInstance()
             else -> TaskFragment.newInstance()
         }
     }

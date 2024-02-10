@@ -4,10 +4,10 @@
         android:id="@+id/tab_task"
         android:icon="@drawable/outline_task_alt"
         android:title="@string/pengujian" />
-    <item
+    <!--<item
         android:id="@+id/tab_info"
         android:icon="@drawable/outline_info"
-        android:title="@string/informasi" />
+        android:title="@string/informasi" />-->
     <item
         android:id="@+id/tab_history"
         android:icon="@drawable/ic_history"
