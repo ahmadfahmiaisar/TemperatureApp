@@ -2,24 +2,10 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.TemperatureApp" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
     </style>
 
     <style name="Theme.TemperatureApp" parent="Base.Theme.TemperatureApp" />
-
-<!--    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
-        &lt;!&ndash; Set the splash screen background, animated icon, and animation
-        duration. &ndash;&gt;
-        <item name="windowSplashScreenBackground">@color/...</item>
-
-        &lt;!&ndash; Use windowSplashScreenAnimatedIcon to add a drawable or an animated
-             drawable. One of these is required. &ndash;&gt;
-        <item name="windowSplashScreenAnimatedIcon">@drawable/...</item>
-        &lt;!&ndash; Required for animated icons. &ndash;&gt;
-        <item name="windowSplashScreenAnimationDuration">200</item>
-
-        &lt;!&ndash; Set the theme of the Activity that directly follows your splash
-        screen. This is required. &ndash;&gt;
-        <item name="postSplashScreenTheme">@style/Theme.App</item>
-    </style>-->
 </resources>
