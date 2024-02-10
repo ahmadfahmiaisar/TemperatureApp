@@ -1,4 +1,4 @@
-package com.temperatureapp
+package com.smadu1.temperatureapp.onboarding
 
 import android.content.Context
 import android.content.Intent
@@ -6,12 +6,12 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import androidx.lifecycle.lifecycleScope
-import com.temperatureapp.Config.NAME_FILE_SHARED_PREFERENCE
-import com.temperatureapp.Config.VALUE_PREF_ADDRESS
-import com.temperatureapp.Config.VALUE_PREF_FULL_NAME
-import com.temperatureapp.Config.VALUE_PREF_PASSWORD
-import com.temperatureapp.Config.VALUE_PREF_USERNAME
-import com.temperatureapp.databinding.ActivityRegisterBinding
+import com.smadu1.temperatureapp.utils.Config.NAME_FILE_SHARED_PREFERENCE
+import com.smadu1.temperatureapp.utils.Config.VALUE_PREF_ADDRESS
+import com.smadu1.temperatureapp.utils.Config.VALUE_PREF_FULL_NAME
+import com.smadu1.temperatureapp.utils.Config.VALUE_PREF_PASSWORD
+import com.smadu1.temperatureapp.utils.Config.VALUE_PREF_USERNAME
+import com.smadu1.temperatureapp.databinding.ActivityRegisterBinding
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 

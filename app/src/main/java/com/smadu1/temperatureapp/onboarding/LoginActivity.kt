@@ -1,12 +1,16 @@
-package com.temperatureapp
+package com.smadu1.temperatureapp.onboarding
 
 import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import com.temperatureapp.Config.NAME_FILE_SHARED_PREFERENCE
-import com.temperatureapp.databinding.ActivityLoginBinding
+import com.smadu1.temperatureapp.utils.Config
+import com.smadu1.temperatureapp.utils.Config.NAME_FILE_SHARED_PREFERENCE
+import com.smadu1.temperatureapp.main.MainActivity
+import com.smadu1.temperatureapp.R
+import com.smadu1.temperatureapp.databinding.ActivityLoginBinding
+import com.smadu1.temperatureapp.utils.startActivityWithAnimation
 
 class LoginActivity : AppCompatActivity() {
     private var _binding: ActivityLoginBinding? = null

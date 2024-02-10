@@ -1,12 +1,16 @@
-package com.temperatureapp
+package com.smadu1.temperatureapp.onboarding
 
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
-import com.temperatureapp.Config.NAME_FILE_SHARED_PREFERENCE
-import com.temperatureapp.databinding.ActivityStarterScreenBinding
+import com.smadu1.temperatureapp.R
+import com.smadu1.temperatureapp.utils.Config.NAME_FILE_SHARED_PREFERENCE
+import com.smadu1.temperatureapp.databinding.ActivityStarterScreenBinding
+import com.smadu1.temperatureapp.main.MainActivity
+import com.smadu1.temperatureapp.utils.Config
+import com.smadu1.temperatureapp.utils.startActivityWithAnimation
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
@@ -35,7 +39,7 @@ class StarterScreenActivity : AppCompatActivity() {
             delay(1000)
             val intent = Intent(
                 this@StarterScreenActivity,
-                if (isNotRegistered) RegisterActivity::class.java else LoginActivity::class.java
+                if (isNotRegistered) RegisterActivity::class.java else MainActivity::class.java
             )
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK)
             startActivityWithAnimation(intent)
