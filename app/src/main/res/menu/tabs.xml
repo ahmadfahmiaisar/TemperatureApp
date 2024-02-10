@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/tab_task"
+        android:icon="@drawable/outline_task_alt"
+        android:title="@string/pengujian" />
+    <item
+        android:id="@+id/tab_info"
+        android:icon="@drawable/outline_info"
+        android:title="@string/informasi" />
+    <item
+        android:id="@+id/tab_history"
+        android:icon="@drawable/ic_history"
+        android:title="@string/history" />
+</menu>
