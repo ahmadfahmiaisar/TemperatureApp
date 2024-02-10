@@ -28,10 +28,8 @@ class StarterScreenActivity : AppCompatActivity() {
 
     private fun checkSharedPreference() {
         val preference = getSharedPreferences(NAME_FILE_SHARED_PREFERENCE, Context.MODE_PRIVATE)
-        val username =
-            preference.getString(Config.VALUE_PREF_USERNAME, getString(R.string.username))
-        val password =
-            preference.getString(Config.VALUE_PREF_PASSWORD, getString(R.string.password))
+        val username = preference.getString(Config.VALUE_PREF_USERNAME, null)
+        val password = preference.getString(Config.VALUE_PREF_PASSWORD, null)
 
         val isNotRegistered = username.isNullOrEmpty() || password.isNullOrEmpty()
 
@@ -39,7 +37,7 @@ class StarterScreenActivity : AppCompatActivity() {
             delay(1000)
             val intent = Intent(
                 this@StarterScreenActivity,
-                if (isNotRegistered) RegisterActivity::class.java else MainActivity::class.java
+                if (isNotRegistered) RegisterActivity::class.java else LoginActivity::class.java
             )
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK)
             startActivityWithAnimation(intent)

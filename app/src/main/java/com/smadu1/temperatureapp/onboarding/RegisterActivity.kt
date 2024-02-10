@@ -69,7 +69,11 @@ class RegisterActivity : AppCompatActivity() {
                         Toast.LENGTH_SHORT
                     ).show()
                 } else {
-                    startActivity(Intent(this@RegisterActivity, LoginActivity::class.java))
+                    Toast.makeText(this@RegisterActivity, "berhasil mendaftar", Toast.LENGTH_SHORT).show()
+                    startActivity(
+                        Intent(this@RegisterActivity, LoginActivity::class.java)
+                            .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK)
+                    )
                 }
             }
         } catch (e: Exception) {
