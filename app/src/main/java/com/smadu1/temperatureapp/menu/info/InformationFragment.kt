@@ -1,10 +1,11 @@
-package com.smadu1.temperatureapp
+package com.smadu1.temperatureapp.menu.info
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.smadu1.temperatureapp.R
 
 class InformationFragment : Fragment() {
 

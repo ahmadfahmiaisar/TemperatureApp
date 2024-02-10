@@ -4,8 +4,8 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.lifecycle.Lifecycle
 import androidx.viewpager2.adapter.FragmentStateAdapter
-import com.smadu1.temperatureapp.HistoryFragment
-import com.smadu1.temperatureapp.InformationFragment
+import com.smadu1.temperatureapp.menu.history.HistoryFragment
+import com.smadu1.temperatureapp.menu.info.InformationFragment
 import com.smadu1.temperatureapp.menu.task.TaskFragment
 
 class ViewPagerAdapter(fragmentManager: FragmentManager, lifecycle: Lifecycle) :
