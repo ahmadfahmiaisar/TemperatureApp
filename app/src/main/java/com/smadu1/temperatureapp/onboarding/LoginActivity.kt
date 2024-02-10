@@ -32,23 +32,24 @@ class LoginActivity : AppCompatActivity() {
             if (username.isEmpty() || password.isEmpty()) {
                 Toast.makeText(this, "mohon isi dahulu", Toast.LENGTH_SHORT).show()
             } else {
-                checkValueSharedPreference()
+                checkValueSharedPreference(username, password)
             }
         }
     }
 
-    private fun checkValueSharedPreference() {
+    private fun checkValueSharedPreference(username: String, password: String) {
         val pref = getSharedPreferences(NAME_FILE_SHARED_PREFERENCE, Context.MODE_PRIVATE)
-        val username = pref.getString(Config.VALUE_PREF_USERNAME, getString(R.string.username))
-        val password = pref.getString(Config.VALUE_PREF_USERNAME, getString(R.string.password))
+        val savedUsername = pref.getString(Config.VALUE_PREF_USERNAME, getString(R.string.username))
+        val savedPassword = pref.getString(Config.VALUE_PREF_USERNAME, getString(R.string.password))
 
-        if (username.isNullOrEmpty() || password.isNullOrEmpty()) {
-            Toast.makeText(this, "username atau password tidak ditemukan", Toast.LENGTH_SHORT)
-                .show()
-        } else {
+        if (username.contentEquals(savedUsername) || password.contentEquals(savedPassword)) {
             val intent = Intent(this, MainActivity::class.java)
                 .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK)
             startActivityWithAnimation(intent)
+        } else {
+            Toast.makeText(this, "username atau password tidak ditemukan", Toast.LENGTH_SHORT)
+                .show()
+
         }
     }
 
